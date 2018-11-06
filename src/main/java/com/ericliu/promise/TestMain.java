@@ -28,17 +28,18 @@ public class TestMain {
 
 
         promiseExecutor.execute(() -> {
-//            System.out.println("this is command");
+
 //            String s=null;
 //            System.out.println(s.substring(0));
-//            try {
-//                Thread.sleep(10000L);
-//            } catch (InterruptedException e) {
-//                e.printStackTrace();
-//            }
+            try {
+                Thread.sleep(10000L);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println("this is command");
             return 1;
         }, defaultPromise);
 
-
+        System.out.println("dddddd");
     }
 }
